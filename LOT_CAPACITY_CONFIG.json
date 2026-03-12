@@ -1,0 +1,460 @@
+{
+  "manheim_nashville_facility": {
+    "metadata": {
+      "facility": "Manheim Nashville",
+      "acres": 263,
+      "official_footprint_map": "attached_assets/image-1511412111940647351_1764133866718.jpg",
+      "map_source_of_truth": true,
+      "last_updated": "2025-11-26",
+      "version": "3.0",
+      "locked": true,
+      "notes": "OFFICIAL FOOTPRINT MAP - SOURCE OF TRUTH. All lot numbers, names, and positions from map legend. DO NOT MODIFY WITHOUT EXPLICIT APPROVAL FROM JASON."
+    },
+    "critical_sale_lane_prefix_system": {
+      "description": "TWO DIFFERENT OPERATIONS FOR SALE LANES - Role-based prefixing system",
+      "inventory_drivers_view": {
+        "lanes": "1-55",
+        "description": "Inventory drivers see sale lanes as simple numbers 1 through 55"
+      },
+      "van_drivers_supervisors_ops_managers_view": {
+        "lanes": "601-655",
+        "prefix": "6",
+        "description": "Van drivers, supervisors, and lot ops managers see sale lanes with prefix 6: 601 through 655"
+      }
+    },
+    "lot_capacities": {
+      "metadata": {
+        "note": "SAVED CAPACITIES FROM JASON - DO NOT DELETE",
+        "last_updated": "2025-11-26"
+      },
+      "inventory_lots": [
+        {
+          "lot_number": "501",
+          "lot_name": "General Inventory 501",
+          "capacity": 144,
+          "status": "SAVED"
+        },
+        {
+          "lot_number": "502",
+          "lot_name": "General Inventory 502",
+          "capacity": 0,
+          "status": "NEEDS_DATA"
+        },
+        {
+          "lot_number": "503",
+          "lot_name": "General Inventory 503",
+          "capacity": 0,
+          "status": "NEEDS_DATA"
+        },
+        {
+          "lot_number": "504",
+          "lot_name": "General Inventory 504",
+          "capacity": 0,
+          "status": "NEEDS_DATA"
+        },
+        {
+          "lot_number": "505",
+          "lot_name": "General Inventory 505",
+          "capacity": 0,
+          "status": "NEEDS_DATA"
+        },
+        {
+          "lot_number": "513",
+          "lot_name": "General Inventory 513",
+          "capacity": 140,
+          "status": "SAVED"
+        },
+        {
+          "lot_number": "514",
+          "lot_name": "General Inventory 514",
+          "capacity": 210,
+          "status": "SAVED"
+        },
+        {
+          "lot_number": "515",
+          "lot_name": "General Inventory 515",
+          "capacity": 216,
+          "status": "SAVED"
+        },
+        {
+          "lot_number": "516",
+          "lot_name": "Ford Inventory 516",
+          "capacity": 378,
+          "status": "SAVED"
+        },
+        {
+          "lot_number": "517",
+          "lot_name": "GM Inventory 517",
+          "capacity": 252,
+          "status": "SAVED"
+        },
+        {
+          "lot_number": "518",
+          "lot_name": "General Inventory 518",
+          "capacity": 252,
+          "status": "SAVED"
+        }
+      ]
+    },
+    "complete_lot_listing_from_map": [
+      {
+        "lot_number": "1",
+        "lot_name": "Gravel Ready to Go",
+        "zone_type": "gravel",
+        "category": "Gravel"
+      },
+      {
+        "lot_number": "2",
+        "lot_name": "INOP Approval Pending",
+        "zone_type": "inop",
+        "category": "INOP"
+      },
+      {
+        "lot_number": "3",
+        "lot_name": "INOP Drop Lot",
+        "zone_type": "inop",
+        "category": "INOP"
+      },
+      {
+        "lot_number": "4",
+        "lot_name": "Fleet Lease Disposal",
+        "zone_type": "inventory",
+        "category": "Fleet Lease",
+        "note": "Updated from map - was Oversized Inventory"
+      },
+      {
+        "lot_number": "5",
+        "lot_name": "TRA Inventory",
+        "zone_type": "inventory",
+        "category": "TRA"
+      },
+      {
+        "lot_number": "6",
+        "lot_name": "TRA Inventory",
+        "zone_type": "inventory",
+        "category": "TRA"
+      },
+      {
+        "lot_number": "7",
+        "lot_name": "TRA Inventory",
+        "zone_type": "inventory",
+        "category": "TRA"
+      },
+      {
+        "lot_number": "8",
+        "lot_name": "TRA Inventory",
+        "zone_type": "inventory",
+        "category": "TRA"
+      },
+      {
+        "lot_number": "9",
+        "lot_name": "TRA Inventory",
+        "zone_type": "inventory",
+        "category": "TRA"
+      },
+      {
+        "lot_number": "10",
+        "lot_name": "Gravel",
+        "zone_type": "gravel",
+        "category": "Gravel",
+        "note": "Gravel lot from map bottom section"
+      },
+      {
+        "lot_number": "20",
+        "lot_name": "Gravel",
+        "zone_type": "gravel",
+        "category": "Gravel",
+        "note": "Gravel lot from map bottom section"
+      },
+      {
+        "lot_number": "30",
+        "lot_name": "Gravel",
+        "zone_type": "gravel",
+        "category": "Gravel",
+        "note": "Gravel lot from map bottom section"
+      },
+      {
+        "lot_number": "40",
+        "lot_name": "Gravel",
+        "zone_type": "gravel",
+        "category": "Gravel",
+        "note": "Gravel lot from map bottom section"
+      },
+      {
+        "lot_number": "50",
+        "lot_name": "Gravel",
+        "zone_type": "gravel",
+        "category": "Gravel",
+        "note": "Gravel lot from map bottom section"
+      },
+      {
+        "lot_number": "60",
+        "lot_name": "Gravel",
+        "zone_type": "gravel",
+        "category": "Gravel",
+        "note": "Gravel lot from map bottom section"
+      },
+      {
+        "lot_number": "99",
+        "lot_name": "TRA Load Zone",
+        "zone_type": "inventory",
+        "category": "TRA",
+        "note": "From map legend"
+      },
+      {
+        "lot_number": "100",
+        "lot_name": "Registration",
+        "zone_type": "shop",
+        "category": "Shops"
+      },
+      {
+        "lot_number": "101",
+        "lot_name": "Inspections",
+        "zone_type": "shop",
+        "category": "Shops"
+      },
+      {
+        "lot_number": "140",
+        "lot_name": "Overflow (CHUTE)",
+        "zone_type": "overflow",
+        "category": "CHUTE Overflow"
+      },
+      {
+        "lot_number": "150",
+        "lot_name": "Overflow (CHUTE)",
+        "zone_type": "overflow",
+        "category": "CHUTE Overflow"
+      },
+      {
+        "lot_number": "160",
+        "lot_name": "Overflow (CHUTE)",
+        "zone_type": "overflow",
+        "category": "CHUTE Overflow"
+      },
+      {
+        "lot_number": "170",
+        "lot_name": "Overflow (CHUTE)",
+        "zone_type": "overflow",
+        "category": "CHUTE Overflow"
+      },
+      {
+        "lot_number": "180",
+        "lot_name": "Exotic",
+        "zone_type": "inventory",
+        "category": "Exotic"
+      },
+      {
+        "lot_number": "190",
+        "lot_name": "Exotic",
+        "zone_type": "inventory",
+        "category": "Exotic"
+      },
+      {
+        "lot_number": "200",
+        "lot_name": "CR Complete",
+        "zone_type": "inventory",
+        "category": "Dealer"
+      },
+      {
+        "lot_number": "205-259",
+        "lot_name": "Sign-Off Lots",
+        "zone_type": "holding",
+        "category": "Sign-Off"
+      },
+      {
+        "lot_number": "300-376",
+        "lot_name": "Shops/Detail Sections",
+        "zone_type": "shop",
+        "category": "Shops & Detail"
+      },
+      {
+        "lot_number": "360",
+        "lot_name": "Detail Lot - Purple (Nissan & Toyota PREVAC Only)",
+        "zone_type": "detail",
+        "category": "Detail Sections"
+      },
+      {
+        "lot_number": "361",
+        "lot_name": "Detail Lot - Dark Green (Dealer & Non-Sale Wash & Vac)",
+        "zone_type": "detail",
+        "category": "Detail Sections"
+      },
+      {
+        "lot_number": "371",
+        "lot_name": "Detail Lot - Bright Yellow (Sale Cars & MB Account)",
+        "zone_type": "detail",
+        "category": "Detail Sections"
+      },
+      {
+        "lot_number": "373-375",
+        "lot_name": "Detail Lots - Multiple Sections",
+        "zone_type": "detail",
+        "category": "Detail Sections"
+      },
+      {
+        "lot_number": "390-411",
+        "lot_name": "Dirty/Clean Inventory",
+        "zone_type": "inventory",
+        "category": "Inventory"
+      },
+      {
+        "lot_number": "400",
+        "lot_name": "Clean Side",
+        "zone_type": "inventory",
+        "category": "Clean Side"
+      },
+      {
+        "lot_number": "410",
+        "lot_name": "Clean Side (450 cars total)",
+        "zone_type": "inventory",
+        "category": "Clean Side"
+      },
+      {
+        "lot_number": "411",
+        "lot_name": "Clean Side",
+        "zone_type": "inventory",
+        "category": "Clean Side"
+      },
+      {
+        "lot_number": "500",
+        "lot_name": "VIP Fence",
+        "zone_type": "inventory",
+        "category": "VIP"
+      },
+      {
+        "lot_number": "501-518",
+        "lot_name": "Main Inventory Lots",
+        "zone_type": "inventory",
+        "category": "Inventory"
+      },
+      {
+        "lot_number": "506",
+        "lot_name": "Turn Age Inventory",
+        "zone_type": "inventory",
+        "category": "Turn Age"
+      },
+      {
+        "lot_number": "507",
+        "lot_name": "Turn Age Inventory",
+        "zone_type": "inventory",
+        "category": "Turn Age"
+      },
+      {
+        "lot_number": "508",
+        "lot_name": "Turn Age Inventory",
+        "zone_type": "inventory",
+        "category": "Turn Age"
+      },
+      {
+        "lot_number": "509",
+        "lot_name": "Turn Age Inventory",
+        "zone_type": "inventory",
+        "category": "Turn Age"
+      },
+      {
+        "lot_number": "510",
+        "lot_name": "Dealer Clean Inventory",
+        "zone_type": "inventory",
+        "category": "Dealer"
+      },
+      {
+        "lot_number": "511",
+        "lot_name": "Dealer Clean Inventory",
+        "zone_type": "inventory",
+        "category": "Dealer"
+      },
+      {
+        "lot_number": "512",
+        "lot_name": "Dealer Clean Inventory",
+        "zone_type": "inventory",
+        "category": "Dealer"
+      },
+      {
+        "lot_number": "591-599",
+        "lot_name": "General Inventory (The Cage)",
+        "zone_type": "inventory",
+        "category": "Cage",
+        "capacity": 450,
+        "note": "9 lots total (591-599), approximately 450 cars capacity"
+      },
+      {
+        "lot_number": "600",
+        "lot_name": "Arena Entrance",
+        "zone_type": "holding",
+        "category": "Arena"
+      },
+      {
+        "lot_number": "694",
+        "lot_name": "Flex TRA Inventory/Sold Lot",
+        "zone_type": "inventory",
+        "category": "TRA"
+      },
+      {
+        "lot_number": "695",
+        "lot_name": "TRA Enterprise Inventory",
+        "zone_type": "inventory",
+        "category": "TRA"
+      },
+      {
+        "lot_number": "696",
+        "lot_name": "Oversized Inventory",
+        "zone_type": "inventory",
+        "category": "Oversized"
+      },
+      {
+        "lot_number": "697",
+        "lot_name": "TRA Sales Lane",
+        "zone_type": "sale_lane",
+        "category": "TRA Sales"
+      },
+      {
+        "lot_number": "698",
+        "lot_name": "TRA Sales Lane",
+        "zone_type": "sale_lane",
+        "category": "TRA Sales"
+      },
+      {
+        "lot_number": "700",
+        "lot_name": "Arena Exit",
+        "zone_type": "holding",
+        "category": "Arena"
+      },
+      {
+        "lot_number": "701",
+        "lot_name": "Oversized Staging",
+        "zone_type": "inventory",
+        "category": "Staging"
+      },
+      {
+        "lot_number": "702",
+        "lot_name": "Sona Staging",
+        "zone_type": "inventory",
+        "category": "Staging"
+      },
+      {
+        "lot_number": "800",
+        "lot_name": "Post Sale Inspection Staging",
+        "zone_type": "inventory",
+        "category": "Post-Sale"
+      },
+      {
+        "lot_number": "801-805",
+        "lot_name": "Sold Lots",
+        "zone_type": "sold",
+        "category": "Sold"
+      },
+      {
+        "lot_number": "820",
+        "lot_name": "TRA Sold Lot",
+        "zone_type": "sold",
+        "category": "TRA"
+      },
+      {
+        "lot_number": "860",
+        "lot_name": "Redemption",
+        "zone_type": "inventory",
+        "category": "Redemption"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+*.tar.gz
+attached_assets/
+package-lock.json
+client/public/lotbuddy_catalog/
+client/public/scene_assets/
+public/
+uv.lock

@@ -1,0 +1,249 @@
+{
+  "system_name": "Lot Ops Pro",
+  "facility": "Manheim Nashville",
+  "backup_type": "MASTER_CONFIGURATION",
+  "version": "1.0",
+  "created_date": "2025-11-26",
+  "purpose": "AUTHORITATIVE BACKUP - Primary data repository for all facility configuration. If LOT_CAPACITY_CONFIG.json is lost, this file is the source of truth for complete facility setup.",
+  "locked": true,
+  "notes": "DO NOT MODIFY. All changes must be approved by Jason and made to both LOT_CAPACITY_CONFIG.json AND this file simultaneously.",
+  
+  "official_footprint_map": {
+    "file_path": "attached_assets/image-1511412111940647351_1764133866718.jpg",
+    "description": "Official Manheim Nashville 263-acre facility footprint",
+    "locked": true,
+    "source_of_truth": true
+  },
+
+  "sale_lane_prefix_system": {
+    "description": "Critical role-based lane display system - NEVER modify without approval",
+    "inventory_drivers": {
+      "view": "1-55",
+      "description": "Simple lane numbers 1-55"
+    },
+    "van_drivers_supervisors_ops_managers": {
+      "view": "601-655",
+      "prefix": "6",
+      "description": "Prefixed lanes 601-655 (adds 600 to base lane number)"
+    }
+  },
+
+  "saved_lot_capacities": {
+    "metadata": {
+      "saved_by": "Jason",
+      "date_saved": "2025-11-26",
+      "count": 7,
+      "note": "These capacities were manually entered by Jason and must be preserved"
+    },
+    "inventory_lots": {
+      "501": {"name": "General Inventory 501", "capacity": 144, "status": "SAVED"},
+      "513": {"name": "General Inventory 513", "capacity": 140, "status": "SAVED"},
+      "514": {"name": "General Inventory 514", "capacity": 210, "status": "SAVED"},
+      "515": {"name": "General Inventory 515", "capacity": 216, "status": "SAVED"},
+      "516": {"name": "Ford Inventory 516", "capacity": 378, "status": "SAVED"},
+      "517": {"name": "GM Inventory 517", "capacity": 252, "status": "SAVED"},
+      "518": {"name": "General Inventory 518", "capacity": 252, "status": "SAVED"}
+    },
+    "cage": {
+      "591-599": {"name": "General Inventory (The Cage)", "capacity": 450, "lots_count": 9, "status": "SAVED"}
+    },
+    "remaining_needed": {
+      "502": "General Inventory 502 - NEEDS_DATA",
+      "503": "General Inventory 503 - NEEDS_DATA",
+      "504": "General Inventory 504 - NEEDS_DATA",
+      "505": "General Inventory 505 - NEEDS_DATA"
+    }
+  },
+
+  "lane_parking_patterns": {
+    "metadata": {
+      "entered_by": "Jason",
+      "date_entered": "2025-11-26",
+      "locked": true,
+      "note": "These patterns define how spots are counted in each lane type"
+    },
+    "lane_41": {
+      "pattern": "Counts by 2s",
+      "sequence": "2, 4, 6, 8... up to 70",
+      "spots_per_designation": 2,
+      "total_designations": 35,
+      "example": "Position 1 = spots 2, Position 2 = spots 4, etc."
+    },
+    "lanes_31_32_42": {
+      "pattern": "Count by 3s",
+      "sequence": "3, 6, 9, 12... up to 126",
+      "spots_per_designation": 3,
+      "total_designations": 42,
+      "lanes_affected": [31, 32, 42],
+      "example": "Position 1 = spots 3, Position 2 = spots 6, etc."
+    }
+  },
+
+  "overflow_parking_zones": {
+    "metadata": {
+      "entered_by": "Jason",
+      "date_entered": "2025-11-26",
+      "locked": true,
+      "purpose": "Emergency parking when regular lots reach capacity"
+    },
+    "drive_lanes": {
+      "type": "Between Sales Lanes",
+      "format": "Drive Lane [Lane1-Lane2]",
+      "examples": ["Drive Lane 41-51"],
+      "description": "Used for Tuesday sale lanes when inventory/sold cars exceed lot capacity",
+      "access": "Between drive aisles on facility map",
+      "restrictions": "Always available during sale lanes"
+    },
+    "grass_line": {
+      "type": "Beside Inventory Lot 515",
+      "format": "Grass Line 515",
+      "description": "Grass parking area beside Lot 515 for overflow inventory",
+      "access": "Accessible anytime",
+      "restrictions": "None"
+    },
+    "arena_overflow_front": {
+      "type": "Arena Entrance Overflow",
+      "identifier": "Arena 600",
+      "location": "In front of Arena Entrance (Lot 600)",
+      "restrictions": "NON-SALE DAYS ONLY - BLOCKED on Monday and Tuesday of sale weeks",
+      "notes": "Cannot use for sold units or inventory units during sale prep"
+    },
+    "arena_overflow_back": {
+      "type": "Arena Exit Overflow",
+      "identifier": "Arena 700",
+      "location": "Behind Arena Exit (Lot 700)",
+      "restrictions": "NON-SALE DAYS ONLY - BLOCKED on Monday and Tuesday of sale weeks",
+      "notes": "Cannot use for sold units or inventory units during sale prep"
+    }
+  },
+
+  "complete_lot_listing": {
+    "note": "All 60+ facility locations from official footprint map",
+    "gravel_lots": {
+      "1": "Gravel Ready to Go",
+      "10": "Gravel",
+      "20": "Gravel",
+      "30": "Gravel",
+      "40": "Gravel",
+      "50": "Gravel",
+      "60": "Gravel"
+    },
+    "inop_and_fleet": {
+      "2": "INOP Approval Pending",
+      "3": "INOP Drop Lot",
+      "4": "Fleet Lease Disposal"
+    },
+    "tra_inventory": {
+      "5": "TRA Inventory",
+      "6": "TRA Inventory",
+      "7": "TRA Inventory",
+      "8": "TRA Inventory",
+      "9": "TRA Inventory",
+      "99": "TRA Load Zone"
+    },
+    "vehicle_entry_and_processing": {
+      "100": "Registration",
+      "101": "Inspections",
+      "140": "Overflow (CHUTE)",
+      "150": "Overflow (CHUTE)",
+      "160": "Overflow (CHUTE)",
+      "170": "Overflow (CHUTE)",
+      "180": "Exotic",
+      "190": "Exotic",
+      "200": "CR Complete",
+      "205-259": "Sign-Off Lots"
+    },
+    "shops_and_detail": {
+      "300-376": "Shops/Detail Sections",
+      "360": "Detail Lot - Purple (Nissan & Toyota PREVAC)",
+      "361": "Detail Lot - Dark Green (Dealer & Non-Sale Wash & Vac)",
+      "371": "Detail Lot - Bright Yellow (Sale Cars & MB Account)",
+      "373-375": "Detail Lots - Multiple Sections"
+    },
+    "clean_and_dirty_inventory": {
+      "390-411": "Dirty/Clean Inventory",
+      "400": "Clean Side (Routing staging)",
+      "410": "Clean Side (450 cars total)",
+      "411": "Clean Side"
+    },
+    "vip_and_dealer": {
+      "500": "VIP Fence",
+      "506": "Turn Age Inventory",
+      "507": "Turn Age Inventory",
+      "508": "Turn Age Inventory",
+      "509": "Turn Age Inventory",
+      "510": "Dealer Clean Inventory",
+      "511": "Dealer Clean Inventory",
+      "512": "Dealer Clean Inventory"
+    },
+    "core_inventory": {
+      "501-505": "General Inventory",
+      "513-518": "General Inventory"
+    },
+    "cage": {
+      "591-599": "The Cage (9 lots, ~450 capacity)"
+    },
+    "tra_and_cage": {
+      "694": "Flex TRA Inventory/Sold Lot",
+      "695": "TRA Enterprise Inventory",
+      "696": "Oversized Inventory",
+      "697": "TRA Sales Lane",
+      "698": "TRA Sales Lane"
+    },
+    "arena_and_staging": {
+      "600": "Arena Entrance",
+      "700": "Arena Exit",
+      "701": "Oversized Staging",
+      "702": "Sona Staging"
+    },
+    "post_sale_and_dealer_pickup": {
+      "800": "Post Sale Inspection Staging",
+      "801-805": "Sold Lots",
+      "820": "TRA Sold Lot",
+      "860": "Redemption"
+    }
+  },
+
+  "feature_implementations": {
+    "van_driver_fuel_code": {
+      "status": "IMPLEMENTED & LOCKED",
+      "database_field": "fuelCode (users table)",
+      "api_endpoints": [
+        "POST /api/users/:userId/fuel-code",
+        "GET /api/users/:userId/fuel-code"
+      ],
+      "description": "Van drivers can save and retrieve fuel card codes"
+    },
+    "overflow_parking": {
+      "status": "IMPLEMENTED & LOCKED",
+      "database_field": "overflowParking (vehicles table)",
+      "database_table": "overflowParkingZones",
+      "description": "Track and manage emergency overflow parking zones"
+    },
+    "lane_configurations": {
+      "status": "IMPLEMENTED & LOCKED",
+      "database_table": "laneConfigs",
+      "new_field": "spotsPerDesignation",
+      "description": "Configurable lane patterns (count by 2s or 3s)"
+    }
+  },
+
+  "database_tables_created": [
+    "overflowParkingZones - Manages emergency parking zone configurations"
+  ],
+
+  "schema_fields_added": [
+    "vehicles.overflowParking - Text field to store overflow parking zone identifier",
+    "laneConfigs.spotsPerDesignation - Integer (1, 2, or 3) for spot counting patterns"
+  ],
+
+  "migration_safety_notes": {
+    "note": "If migrating to a different format or database:",
+    "backup_files": [
+      "LOT_CAPACITY_CONFIG.json (comprehensive lot and capacity data)",
+      "MASTER_CONFIGURATION.json (this file - complete facility setup)",
+      "replit.md (documentation backup)"
+    ],
+    "instructions": "Use all three files in conjunction. MASTER_CONFIGURATION.json + LOT_CAPACITY_CONFIG.json + replit.md provide complete redundancy."
+  }
+}
