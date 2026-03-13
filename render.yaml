@@ -1,0 +1,47 @@
+# Render Blueprint — Lot Ops Pro (lotopspro.io)
+services:
+  - type: web
+    name: lot-ops-pro
+    runtime: node
+    region: ohio
+    plan: free
+    branch: main
+    repo: https://github.com/cryptocreeper94-sudo/lot-ops-pro
+    buildCommand: bash scripts/render-build.sh
+    startCommand: bash scripts/render-start.sh
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: DATABASE_URL
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_PUBLISHABLE_KEY
+        sync: false
+      - key: HELIUS_API_KEY
+        sync: false
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: TWILIO_PHONE_NUMBER
+        sync: false
+      - key: AI_INTEGRATIONS_OPENAI_BASE_URL
+        sync: false
+      - key: AI_INTEGRATIONS_OPENAI_API_KEY
+        sync: false
+      - key: DARKWAVE_API_KEY
+        sync: false
+      - key: DARKWAVE_API_SECRET
+        sync: false
+      - key: DARKWAVE_HUB_URL
+        sync: false
+      - key: RESEND_API_KEY
+        sync: false
